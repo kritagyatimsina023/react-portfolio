@@ -34,7 +34,7 @@ const AnimatedHeaderSection = ({
         duration: 1,
         ease: "circ.out",
       },
-      "<+0.2"
+      "<+0.2",
     );
   });
   return (
