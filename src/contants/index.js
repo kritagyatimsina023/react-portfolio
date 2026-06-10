@@ -504,6 +504,80 @@ export const projects = [
       },
     ],
   },
+  {
+    id: 7,
+    name: "Laguna Al-Sha'ab",
+
+    description:
+      "A high-fidelity restaurant concept website for a fictional Mediterranean-Georgian gastronomic show, blending immersive scroll-driven animations, parallax salt crystal effects, and cinematic section transitions. The experience guides visitors through a 5-course tasting narrative — from an animated hero with clip-path reveals to a horizontal scroll course showcase, interactive drinks slider, and a pinned SALT acronym sequence — all orchestrated with GSAP ScrollTrigger and Next.js.",
+
+    miniDescription:
+      "A cinematic restaurant concept site featuring GSAP scroll animations, parallax effects, horizontal course scrolling, and immersive section transitions built with Next.js, Tailwind CSS, and GSAP.",
+
+    href: "https://restaurant-design-snowy.vercel.app/",
+    case: "Personal Project",
+
+    image: "/assets/projects/resturents.png",
+    video:
+      "https://res.cloudinary.com/dohtpxlnd/video/upload/v1781059463/Screen_Recording_2026-06-10_at_08.20.25_1_fvp4f6.mp4",
+    bgImage: "/assets/projects/resturents.png",
+
+    overview_One:
+      "Laguna Al-Sha'ab is a gastronomic concept restaurant website that immerses visitors in a multi-course Mediterranean-Georgian culinary journey. The site features a layered hero with clip-path scroll reveals, a pinned SALT section with animated letter sequences, and a horizontally scrolling 5-course showcase — each transition choreographed to feel like turning the page of a story.",
+
+    overview_Two:
+      "Built with a performance-first mindset, the project focuses on scroll-driven storytelling using GSAP ScrollTrigger timelines, smooth parallax on decorative salt crystal imagery, and seamless panel transitions. Every section — from the drinks carousel to the chef profiles — is designed to feel like a living editorial rather than a static webpage.",
+
+    summary_Frameworks: [
+      { id: 1, name: "Next.js" },
+      { id: 2, name: "Tailwind CSS" },
+      { id: 3, name: "GSAP" },
+      { id: 4, name: "TypeScript" },
+    ],
+
+    frameworks: [
+      { id: 1, name: "Next.js" },
+      { id: 2, name: "Tailwind CSS" },
+      { id: 3, name: "GSAP" },
+      { id: 4, name: "TypeScript" },
+      { id: 5, name: "ScrollTrigger" },
+      { id: 6, name: "useGSAP" },
+      { id: 7, name: "next/image" },
+    ],
+
+    highlights: [
+      {
+        icon: "tabler:layers-intersect",
+        label: "Scroll-driven Storytelling",
+        desc: "GSAP ScrollTrigger timelines orchestrate pinned sections, clip-path reveals, and staggered fade-ins tied precisely to scroll progress.",
+      },
+      {
+        icon: "tabler:arrows-horizontal",
+        label: "Horizontal Course Scroll",
+        desc: "A 5-course tasting menu transitions into a full-viewport horizontal scroll track with container-synced title opacity animations.",
+      },
+      {
+        icon: "tabler:photo-up",
+        label: "Parallax Crystal Effects",
+        desc: "Decorative salt crystal images float at independent speeds and directions, creating a layered depth effect across multiple sections.",
+      },
+      {
+        icon: "tabler:circle-half-2",
+        label: "Clip-path Transitions",
+        desc: "Sections reveal through animated circular clip-paths expanding from a focal point, producing a cinematic curtain-lift effect.",
+      },
+      {
+        icon: "tabler:glass-cocktail",
+        label: "Interactive Drinks Slider",
+        desc: "A full-screen drinks carousel pairs each cocktail with its ingredients, navigated by index and animated with smooth crossfades.",
+      },
+      {
+        icon: "tabler:device-desktop-analytics",
+        label: "Editorial Layout Design",
+        desc: "Typography-led layout with large serif headings, restrained color palette, and motion-balanced visuals for a luxury editorial feel.",
+      },
+    ],
+  },
 ];
 export const socials = [
   {
