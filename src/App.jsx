@@ -76,13 +76,19 @@ const App = () => {
   useEffect(() => {
     if (isReady) return;
 
+    const mountTime = performance.now();
+
     const tick = () => {
       const currentProgress = progressRef.current;
+      const elapsedTotal = performance.now() - mountTime;
+      // Guarantee progress reaches 100% within 2.5 seconds
+      const simulatedProgress = Math.min((elapsedTotal / 2500) * 100, 100);
+      const effectiveProgress = Math.max(currentProgress, simulatedProgress);
 
       setDisplayProgress((prev) => {
         let target;
 
-        if (currentProgress >= 100) {
+        if (effectiveProgress >= 100) {
           if (!startedHoldRef.current) {
             startedHoldRef.current = true;
             holdStartRef.current = performance.now();
@@ -96,7 +102,7 @@ const App = () => {
             return 100;
           }
         } else {
-          target = Math.max(prev, currentProgress);
+          target = Math.max(prev, effectiveProgress);
         }
 
         const next = prev + (target - prev) * EASE_SPEED;
