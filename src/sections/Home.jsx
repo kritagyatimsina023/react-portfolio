@@ -14,7 +14,6 @@ const Home = () => {
   useEffect(() => {
     if (location.hash) {
       const el = document.getElementById(location.hash.substring(1));
-
       setTimeout(() => {
         el?.scrollIntoView({ behavior: "smooth" });
       }, 100);
