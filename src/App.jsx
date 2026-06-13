@@ -6,6 +6,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useProgress } from "@react-three/drei";
 
+import Navbar from "./sections/Navbar";
+
 // ─── Lazy-loaded routes ───────────────────────────────────────────────────────
 // Each route becomes its own JS chunk. The browser only downloads
 // ProjectInfo's bundle when the user navigates to /project/:slug.
@@ -175,6 +177,7 @@ const App = () => {
       )}
 
       {/* ── Suspense wraps lazy routes so each chunk has its own fallback ── */}
+      <Navbar />
       <Suspense fallback={<RouteFallback />}>
         <Routes>
           <Route path="/" element={<Home />} />
