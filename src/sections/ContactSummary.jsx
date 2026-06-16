@@ -54,7 +54,7 @@ const ContactSummary = () => {
         </p>
       </div>
       <a
-        href="/assets/resume/Kritagya's_Resume.pdf"
+        href="/assets/resume/KritagyaUpdatedResume.pdf"
         download="Kritagya_Timsina_Resume.pdf"
         className="inline-block mt-6 px-6 py-2 text-sm font-medium border border-black rounded-full hover:bg-black hover:text-white transition-all duration-300"
       >
