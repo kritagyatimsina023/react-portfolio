@@ -144,6 +144,155 @@ export const servicesData = [
 export const projects = [
   {
     id: 1,
+    name: "Pho99",
+
+    description:
+      "A full redesign of the Pho99 Vietnamese restaurant website  a client project assigned by Webx Nepal blending cultural storytelling with modern web animation. The experience opens with a signature arched double-door animation that swings open on scroll to reveal the tagline 'Where Two Cultures Meet', setting the tone for a visually rich, editorial-style restaurant site. Built with Next.js, TypeScript, Tailwind CSS v4, GSAP, and EmailJS for contact form integration.",
+
+    miniDescription:
+      "A Vietnamese restaurant redesign featuring a cinematic door-open hero animation, scroll-driven storytelling, and cultural editorial aesthetics built with Next.js, TypeScript, Tailwind CSS v4, and GSAP.",
+
+    href: "https://pho99-nine.vercel.app/",
+    case: "Client Project — Webx Nepal",
+
+    image: "/assets/projects/Pho99.png",
+    video:
+      "https://res.cloudinary.com/dohtpxlnd/video/upload/v1781582439/Screen_Recording_2026-06-16_at_09.16.09_uxd8in.mp4",
+    bgImage: "/assets/projects/DarkHeroFood.png",
+
+    overview_One:
+      "Pho99 is a full redesign of a Vietnamese restaurant website, commissioned through Webx Nepal. The site opens with a signature arched double-door animation — two ornately carved wooden doors swing outward on scroll to reveal the brand tagline 'Where Two Cultures Meet' against a delicate architectural sketch backdrop. The hero immediately communicates the restaurant's cultural identity: a fusion of Vietnamese and Nepali sensibilities rendered through restrained typography, warm tones, and purposeful motion.",
+
+    overview_Two:
+      "Beyond the hero, the site continues its editorial narrative through GSAP-powered scroll animations, smooth section transitions, and a contact form integrated via EmailJS. Built on Next.js with TypeScript and Tailwind CSS v4, the project prioritizes performance, responsiveness across all screen sizes, and a luxury dining aesthetic that feels alive without being overwhelming.",
+
+    summary_Frameworks: [
+      { id: 1, name: "Next.js" },
+      { id: 2, name: "TypeScript" },
+      { id: 3, name: "Tailwind CSS v4" },
+      { id: 4, name: "GSAP" },
+    ],
+
+    frameworks: [
+      { id: 1, name: "Next.js" },
+      { id: 2, name: "TypeScript" },
+      { id: 3, name: "Tailwind CSS v4" },
+      { id: 4, name: "GSAP" },
+      { id: 5, name: "ScrollTrigger" },
+      { id: 6, name: "EmailJS" },
+      { id: 7, name: "useGSAP" },
+      { id: 8, name: "next/image" },
+    ],
+
+    highlights: [
+      {
+        icon: "tabler:door-enter",
+        label: "Cinematic Door-Open Hero",
+        desc: "A pair of arched, ornately carved double doors animate open on scroll, dramatically revealing the brand tagline and architectural sketch backdrop in a signature entrance moment.",
+      },
+      {
+        icon: "tabler:brand-react",
+        label: "Scroll-Driven Storytelling",
+        desc: "GSAP ScrollTrigger orchestrates section entrances, staggered fade-ins, and motion sequences that guide visitors through the restaurant's cultural narrative as they scroll.",
+      },
+      {
+        icon: "tabler:palette",
+        label: "Cultural Editorial Aesthetic",
+        desc: "Warm neutral tones, large serif typography, lotus motifs, and restrained red accents reflect the Vietnamese-Nepali cultural fusion at the heart of the Pho99 brand.",
+      },
+      {
+        icon: "tabler:mail-forward",
+        label: "EmailJS Contact Integration",
+        desc: "A fully functional contact and reservation form powered by EmailJS delivers form submissions directly to the restaurant's inbox without a backend server.",
+      },
+      {
+        icon: "tabler:device-mobile",
+        label: "Fully Responsive Design",
+        desc: "Built mobile-first with Tailwind CSS v4, every section adapts seamlessly across phone, tablet, and desktop while preserving the cinematic animation experience.",
+      },
+      {
+        icon: "tabler:bolt",
+        label: "Performance-Optimized Build",
+        desc: "Next.js image optimization, lazy loading, and lean GSAP animation pipelines ensure fast load times and smooth 60fps scroll performance across all devices.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Laguna Al-Sha'ab",
+
+    description:
+      "A high-fidelity restaurant concept website for a fictional Mediterranean-Georgian gastronomic show, blending immersive scroll-driven animations, parallax salt crystal effects, and cinematic section transitions. The experience guides visitors through a 5-course tasting narrative — from an animated hero with clip-path reveals to a horizontal scroll course showcase, interactive drinks slider, and a pinned SALT acronym sequence — all orchestrated with GSAP ScrollTrigger and Next.js.",
+
+    miniDescription:
+      "A cinematic restaurant concept site featuring GSAP scroll animations, parallax effects, horizontal course scrolling, and immersive section transitions built with Next.js, Tailwind CSS, and GSAP.",
+
+    href: "https://restaurant-design-snowy.vercel.app/",
+    case: "Personal Project",
+
+    image: "/assets/projects/resturents.png",
+    video:
+      "https://res.cloudinary.com/dohtpxlnd/video/upload/v1781059463/Screen_Recording_2026-06-10_at_08.20.25_1_fvp4f6.mp4",
+    bgImage: "/assets/projects/resturents.png",
+
+    overview_One:
+      "Laguna Al-Sha'ab is a gastronomic concept restaurant website that immerses visitors in a multi-course Mediterranean-Georgian culinary journey. The site features a layered hero with clip-path scroll reveals, a pinned SALT section with animated letter sequences, and a horizontally scrolling 5-course showcase — each transition choreographed to feel like turning the page of a story.",
+
+    overview_Two:
+      "Built with a performance-first mindset, the project focuses on scroll-driven storytelling using GSAP ScrollTrigger timelines, smooth parallax on decorative salt crystal imagery, and seamless panel transitions. Every section — from the drinks carousel to the chef profiles — is designed to feel like a living editorial rather than a static webpage.",
+
+    summary_Frameworks: [
+      { id: 1, name: "Next.js" },
+      { id: 2, name: "Tailwind CSS" },
+      { id: 3, name: "GSAP" },
+      { id: 4, name: "TypeScript" },
+    ],
+
+    frameworks: [
+      { id: 1, name: "Next.js" },
+      { id: 2, name: "Tailwind CSS" },
+      { id: 3, name: "GSAP" },
+      { id: 4, name: "TypeScript" },
+      { id: 5, name: "ScrollTrigger" },
+      { id: 6, name: "useGSAP" },
+      { id: 7, name: "next/image" },
+    ],
+
+    highlights: [
+      {
+        icon: "tabler:layers-intersect",
+        label: "Scroll-driven Storytelling",
+        desc: "GSAP ScrollTrigger timelines orchestrate pinned sections, clip-path reveals, and staggered fade-ins tied precisely to scroll progress.",
+      },
+      {
+        icon: "tabler:arrows-horizontal",
+        label: "Horizontal Course Scroll",
+        desc: "A 5-course tasting menu transitions into a full-viewport horizontal scroll track with container-synced title opacity animations.",
+      },
+      {
+        icon: "tabler:photo-up",
+        label: "Parallax Crystal Effects",
+        desc: "Decorative salt crystal images float at independent speeds and directions, creating a layered depth effect across multiple sections.",
+      },
+      {
+        icon: "tabler:circle-half-2",
+        label: "Clip-path Transitions",
+        desc: "Sections reveal through animated circular clip-paths expanding from a focal point, producing a cinematic curtain-lift effect.",
+      },
+      {
+        icon: "tabler:glass-cocktail",
+        label: "Interactive Drinks Slider",
+        desc: "A full-screen drinks carousel pairs each cocktail with its ingredients, navigated by index and animated with smooth crossfades.",
+      },
+      {
+        icon: "tabler:device-desktop-analytics",
+        label: "Editorial Layout Design",
+        desc: "Typography-led layout with large serif headings, restrained color palette, and motion-balanced visuals for a luxury editorial feel.",
+      },
+    ],
+  },
+  {
+    id: 3,
     name: "Dentelligent",
 
     description:
@@ -215,7 +364,81 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 4,
+    name: "EseAgency Clone",
+
+    description:
+      "A pixel-accurate clone of a high-end creative agency website built to master advanced GSAP animation patterns and scroll-driven UI composition. The site replicates the layered card stacking sequences, SplitText character reveals, and pinned scroll transitions of a premium agency experience — all orchestrated with GSAP timelines and ScrollTrigger. Built with React.js, Vite, and GSAP with a focus on performance-optimized animation pipelines and reusable scroll-triggered component patterns.",
+
+    miniDescription:
+      "A pixel-perfect agency website clone featuring GSAP card stacking animations, SplitText character reveals, pinned scroll sequences, and scroll-driven UI composition built with React.js and GSAP.",
+
+    href: "https://easeagencyclone.netlify.app/",
+    case: "Personal Project",
+
+    image: "/assets/projects/eseAgency.png", // add later
+    video:
+      "https://res.cloudinary.com/dohtpxlnd/video/upload/v1781583159/Screen_Recording_2026-06-16_at_09.52.19_a6jcwm.mp4", // add later
+    bgImage: "/assets/projects/eseAgency.png", // add later
+
+    overview_One:
+      "EseAgency Clone is a pixel-accurate recreation of a premium creative agency landing page, built with the sole purpose of pushing GSAP animation mastery to its limits. The site features a signature card stacking system where service cards layer and pin in sequence as the user scrolls — each transition timed to frame-accurate precision using GSAP timelines. SplitText-based character and word reveal animations fire on scroll entry, giving every heading a cinematic, high-production entrance.",
+
+    overview_Two:
+      "The project goes beyond simple animation copying — it involved reverse-engineering complex pinned scroll sequences, coordinating multiple simultaneous GSAP timelines, and building reusable scroll-triggered component patterns that can be carried into production projects. Built with React.js and Vite for a lean, fast development environment, the clone serves as both a technical study and a showcase of scroll-driven UI craftsmanship.",
+
+    summary_Frameworks: [
+      { id: 1, name: "React.js" },
+      { id: 2, name: "GSAP" },
+      { id: 3, name: "Vite" },
+      { id: 4, name: "CSS3" },
+    ],
+
+    frameworks: [
+      { id: 1, name: "React.js" },
+      { id: 2, name: "GSAP" },
+      { id: 3, name: "ScrollTrigger" },
+      { id: 4, name: "SplitText" },
+      { id: 5, name: "Vite" },
+      { id: 6, name: "CSS3" },
+      { id: 7, name: "useGSAP" },
+    ],
+
+    highlights: [
+      {
+        icon: "tabler:cards",
+        label: "Card Stacking Animation",
+        desc: "Service cards stack and pin in layered depth transitions as the user scrolls, each card animating into position using precisely timed GSAP timelines and pinned scroll sequences.",
+      },
+      {
+        icon: "tabler:text-size",
+        label: "SplitText Character Reveals",
+        desc: "Headings and body text split into individual characters and words, animating in with frame-accurate entrance timing synchronized to ScrollTrigger scroll progress.",
+      },
+      {
+        icon: "tabler:pin",
+        label: "Pinned Scroll Sequences",
+        desc: "Multiple full-viewport sections pin in place during scroll, allowing layered content transitions and animated reveals to play out before the page continues scrolling.",
+      },
+      {
+        icon: "tabler:timeline",
+        label: "Coordinated GSAP Timelines",
+        desc: "Complex multi-element animations are orchestrated through nested GSAP timelines, ensuring precise sequencing and smooth choreography across all animated sections.",
+      },
+      {
+        icon: "tabler:recycle",
+        label: "Reusable Animation Patterns",
+        desc: "Scroll-triggered animation logic is abstracted into reusable React component patterns, making the animation system modular and portable to production projects.",
+      },
+      {
+        icon: "tabler:eye-check",
+        label: "Pixel-Perfect Accuracy",
+        desc: "Every layout detail, spacing decision, and motion curve was studied and replicated with precision — treating the clone as a design and engineering study rather than a shortcut.",
+      },
+    ],
+  },
+  {
+    id: 5,
     name: "Query AI",
     description:
       "An AI-powered conversational platform inspired by modern chatbot systems, built to deliver fast, intelligent, and context-aware interactions. The application combines secure authentication, real-time AI responses, payment-based premium plans, persistent chat history, and shareable conversations into a scalable full-stack experience focused on performance, usability, and modern UI design.",
@@ -271,7 +494,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 6,
     name: "Emotion Driven Symbolic Music Generator",
     description:
       "A controllable and emotion-aware symbolic music generation framework that generates multi-track MIDI compositions from text captions and lyrics. The system uses Transformer-based autoregressive models with adversarial training to reduce exposure bias, enabling structurally coherent and emotionally aligned musical outputs.",
@@ -333,7 +556,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 7,
     name: "Spylt Milk Clone",
 
     description:
@@ -389,7 +612,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 8,
     name: "CodeBook",
 
     description:
@@ -446,7 +669,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 9,
     name: "Chatter",
 
     description:
@@ -501,80 +724,6 @@ export const projects = [
         icon: "tabler:bell",
         label: "Live Notifications",
         desc: "Real-time notifications alert users when new messages arrive, improving engagement and responsiveness.",
-      },
-    ],
-  },
-  {
-    id: 7,
-    name: "Laguna Al-Sha'ab",
-
-    description:
-      "A high-fidelity restaurant concept website for a fictional Mediterranean-Georgian gastronomic show, blending immersive scroll-driven animations, parallax salt crystal effects, and cinematic section transitions. The experience guides visitors through a 5-course tasting narrative — from an animated hero with clip-path reveals to a horizontal scroll course showcase, interactive drinks slider, and a pinned SALT acronym sequence — all orchestrated with GSAP ScrollTrigger and Next.js.",
-
-    miniDescription:
-      "A cinematic restaurant concept site featuring GSAP scroll animations, parallax effects, horizontal course scrolling, and immersive section transitions built with Next.js, Tailwind CSS, and GSAP.",
-
-    href: "https://restaurant-design-snowy.vercel.app/",
-    case: "Personal Project",
-
-    image: "/assets/projects/resturents.png",
-    video:
-      "https://res.cloudinary.com/dohtpxlnd/video/upload/v1781059463/Screen_Recording_2026-06-10_at_08.20.25_1_fvp4f6.mp4",
-    bgImage: "/assets/projects/resturents.png",
-
-    overview_One:
-      "Laguna Al-Sha'ab is a gastronomic concept restaurant website that immerses visitors in a multi-course Mediterranean-Georgian culinary journey. The site features a layered hero with clip-path scroll reveals, a pinned SALT section with animated letter sequences, and a horizontally scrolling 5-course showcase — each transition choreographed to feel like turning the page of a story.",
-
-    overview_Two:
-      "Built with a performance-first mindset, the project focuses on scroll-driven storytelling using GSAP ScrollTrigger timelines, smooth parallax on decorative salt crystal imagery, and seamless panel transitions. Every section — from the drinks carousel to the chef profiles — is designed to feel like a living editorial rather than a static webpage.",
-
-    summary_Frameworks: [
-      { id: 1, name: "Next.js" },
-      { id: 2, name: "Tailwind CSS" },
-      { id: 3, name: "GSAP" },
-      { id: 4, name: "TypeScript" },
-    ],
-
-    frameworks: [
-      { id: 1, name: "Next.js" },
-      { id: 2, name: "Tailwind CSS" },
-      { id: 3, name: "GSAP" },
-      { id: 4, name: "TypeScript" },
-      { id: 5, name: "ScrollTrigger" },
-      { id: 6, name: "useGSAP" },
-      { id: 7, name: "next/image" },
-    ],
-
-    highlights: [
-      {
-        icon: "tabler:layers-intersect",
-        label: "Scroll-driven Storytelling",
-        desc: "GSAP ScrollTrigger timelines orchestrate pinned sections, clip-path reveals, and staggered fade-ins tied precisely to scroll progress.",
-      },
-      {
-        icon: "tabler:arrows-horizontal",
-        label: "Horizontal Course Scroll",
-        desc: "A 5-course tasting menu transitions into a full-viewport horizontal scroll track with container-synced title opacity animations.",
-      },
-      {
-        icon: "tabler:photo-up",
-        label: "Parallax Crystal Effects",
-        desc: "Decorative salt crystal images float at independent speeds and directions, creating a layered depth effect across multiple sections.",
-      },
-      {
-        icon: "tabler:circle-half-2",
-        label: "Clip-path Transitions",
-        desc: "Sections reveal through animated circular clip-paths expanding from a focal point, producing a cinematic curtain-lift effect.",
-      },
-      {
-        icon: "tabler:glass-cocktail",
-        label: "Interactive Drinks Slider",
-        desc: "A full-screen drinks carousel pairs each cocktail with its ingredients, navigated by index and animated with smooth crossfades.",
-      },
-      {
-        icon: "tabler:device-desktop-analytics",
-        label: "Editorial Layout Design",
-        desc: "Typography-led layout with large serif headings, restrained color palette, and motion-balanced visuals for a luxury editorial feel.",
       },
     ],
   },
