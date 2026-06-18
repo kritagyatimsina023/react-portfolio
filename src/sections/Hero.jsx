@@ -66,7 +66,6 @@ web experiences and products`;
           camera={{ position: [0, 0, -10], fov: 17.5, near: 1, far: 20 }}
         >
           <ambientLight intensity={0.5} />
-
           <Suspense fallback={null}>
             <Float speed={2}>
               <Planet scale={isMobile ? 0.7 : 1} />
