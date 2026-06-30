@@ -78,6 +78,12 @@
 //   // },
 // ];
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  SiGsap,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 export const servicesData = [
   {
     title: "Full-Stack Development",
@@ -167,10 +173,10 @@ export const projects = [
       "The project emphasizes reusable animation architecture and maintainable frontend engineering. Built with Next.js, TypeScript, GSAP, TanStack Query, and Zod, it combines smooth motion design, scalable component structures, efficient server-state management, and type-safe validation to deliver both an engaging user experience and a production-ready frontend.",
 
     summary_Frameworks: [
-      { id: 1, name: "Next.js" },
-      { id: 2, name: "TypeScript" },
-      { id: 3, name: "Tailwind CSS" },
-      { id: 4, name: "GSAP" },
+      { id: 1, name: "Next.js", icon: SiNextdotjs },
+      { id: 2, name: "TypeScript", icon: SiTypescript },
+      { id: 3, name: "Tailwind CSS", icon: SiTailwindcss },
+      { id: 4, name: "GSAP", icon: SiGsap },
     ],
 
     frameworks: [
@@ -179,8 +185,8 @@ export const projects = [
       { id: 3, name: "TypeScript" },
       { id: 4, name: "Tailwind CSS" },
       { id: 5, name: "GSAP" },
-      { id: 6, name: "ScrollTrigger" },
-      { id: 7, name: "SplitText" },
+      // { id: 6, name: "ScrollTrigger" },
+      // { id: 7, name: "SplitText" },
       { id: 8, name: "TanStack Query" },
       { id: 9, name: "Zod" },
       { id: 10, name: "Axios" },
@@ -336,10 +342,10 @@ export const projects = [
       { id: 2, name: "TypeScript" },
       { id: 3, name: "Tailwind CSS v4" },
       { id: 4, name: "GSAP" },
-      { id: 5, name: "ScrollTrigger" },
+      // { id: 5, name: "ScrollTrigger" },
       { id: 6, name: "EmailJS" },
-      { id: 7, name: "useGSAP" },
-      { id: 8, name: "next/image" },
+      // { id: 7, name: "useGSAP" },
+      // { id: 8, name: "next/image" },
     ],
 
     highlights: [
@@ -411,9 +417,9 @@ export const projects = [
       { id: 2, name: "Tailwind CSS" },
       { id: 3, name: "GSAP" },
       { id: 4, name: "TypeScript" },
-      { id: 5, name: "ScrollTrigger" },
-      { id: 6, name: "useGSAP" },
-      { id: 7, name: "next/image" },
+      // { id: 5, name: "ScrollTrigger" },
+      // { id: 6, name: "useGSAP" },
+      // { id: 7, name: "next/image" },
     ],
 
     highlights: [
@@ -476,6 +482,7 @@ export const projects = [
       { id: 2, name: "Tailwind CSS" },
       { id: 3, name: "PostgreSQL" },
       { id: 4, name: "Prisma ORM" },
+      { id: 5, name: "TypeScript" },
     ],
 
     frameworks: [
@@ -485,8 +492,9 @@ export const projects = [
       { id: 4, name: "Prisma ORM" },
       { id: 5, name: "VAPI API" },
       { id: 6, name: "Zustand" },
-      { id: 7, name: "TanStack Query" },
+      { id: 7, name: "React Query" },
       { id: 8, name: "Clerk" },
+      { id: 5, name: "TypeScript" },
     ],
     highlights: [
       {
@@ -549,17 +557,17 @@ export const projects = [
       { id: 1, name: "React.js" },
       { id: 2, name: "GSAP" },
       { id: 3, name: "Vite" },
-      { id: 4, name: "CSS3" },
+      { id: 4, name: "Tailwind CSS" },
     ],
 
     frameworks: [
       { id: 1, name: "React.js" },
       { id: 2, name: "GSAP" },
-      { id: 3, name: "ScrollTrigger" },
-      { id: 4, name: "SplitText" },
+      // { id: 3, name: "ScrollTrigger" },
+      // { id: 4, name: "SplitText" },
       { id: 5, name: "Vite" },
-      { id: 6, name: "CSS3" },
-      { id: 7, name: "useGSAP" },
+      { id: 6, name: "Tailwind CSS" },
+      // { id: 7, name: "useGSAP" },
     ],
 
     highlights: [
@@ -628,7 +636,7 @@ export const projects = [
       { id: 5, name: "JWT Auth" },
       { id: 6, name: "Stripe + Esewa" },
       { id: 7, name: "Cloudinary" },
-      { id: 8, name: "Framer Motion" },
+      // { id: 8, name: "Framer Motion" },
       { id: 9, name: "ShadCN UI" },
       { id: 10, name: "OpenAI API" },
     ],
@@ -746,9 +754,10 @@ export const projects = [
 
     frameworks: [
       { id: 1, name: "Next.js" },
-      { id: 2, name: "GSAP Animation" },
-      { id: 3, name: "ScrollTrigger" },
-      { id: 4, name: "SplitText Animation" },
+      { id: 2, name: "GSAP" },
+      { id: 3, name: "Tailwind CSS" },
+      // { id: 3, name: "ScrollTrigger" },
+      // { id: 4, name: "SplitText Animation" },
     ],
 
     highlights: [

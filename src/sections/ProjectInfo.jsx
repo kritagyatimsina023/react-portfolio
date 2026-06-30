@@ -12,6 +12,35 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import {
+  SiNextdotjs,
+  SiReact,
+  SiTypescript,
+  SiTailwindcss,
+  SiGreensock,
+  SiAxios,
+  SiZod,
+  SiReactquery,
+  SiStripe,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiJsonwebtokens,
+  SiCloudinary,
+  SiPrisma,
+  SiClerk,
+  SiGsap,
+  SiPython,
+  SiFlask,
+  SiPytorch,
+  SiSocketdotio,
+} from "react-icons/si";
 
 // ─── Lazy-load the heavy Icon component ──────────────────────────────────────
 // @iconify-icon/react pulls in a large icon registry; defer it out of the
@@ -314,7 +343,85 @@ const VideoPlayer = ({ src }) => {
     </div>
   );
 };
-
+const frameworkIcons = {
+  React: {
+    icon: SiReact,
+    color: "#61DAFB",
+  },
+  "Next.js": {
+    icon: SiNextdotjs,
+    color: "#000000",
+  },
+  TypeScript: {
+    icon: SiTypescript,
+    color: "#3178C6",
+  },
+  "Tailwind CSS": {
+    icon: SiTailwindcss,
+    color: "#06B6D4",
+  },
+  GSAP: {
+    icon: SiGsap,
+    color: "#88CE02",
+  },
+  Clerk: {
+    icon: SiClerk,
+  },
+  "Socket.io": {
+    icon: SiSocketdotio,
+  },
+  PyTorch: {
+    icon: SiPytorch,
+    color: "#fcba03",
+  },
+  Python: {
+    icon: SiPython,
+    color: "#3776AB",
+  },
+  Flask: {
+    icon: SiFlask,
+  },
+  Axios: {
+    icon: SiAxios,
+    color: "#5A29E4",
+  },
+  Zod: {
+    icon: SiZod,
+    color: "#3068B7",
+  },
+  "React Query": {
+    icon: SiReactquery,
+    color: "#FF4154",
+  },
+  "Node.js": {
+    icon: SiNodedotjs,
+    color: "#339933",
+  },
+  "Express.js": {
+    icon: SiExpress,
+    color: "#000000",
+  },
+  MongoDB: {
+    icon: SiMongodb,
+    color: "#47A248",
+  },
+  JWT: {
+    icon: SiJsonwebtokens,
+    color: "#D63AFF",
+  },
+  Stripe: {
+    icon: SiStripe,
+    color: "#635BFF",
+  },
+  Cloudinary: {
+    icon: SiCloudinary,
+    color: "#3448C5",
+  },
+  "Prisma ORM": {
+    icon: SiPrisma,
+    color: "#3448C5",
+  },
+};
 // ─── Main component ───────────────────────────────────────────────────────────
 const ProjectInfo = () => {
   const rootRef = useRef(null);
@@ -643,16 +750,45 @@ const ProjectInfo = () => {
               </h2>
             </div>
           </div>
-
           {/* Tags */}
-          <div ref={tagsRef} className="flex flex-wrap gap-2 mb-8">
-            {project.frameworks.map((fw) => (
-              <span key={fw.id} className="pi-tag">
-                {fw.name}
-              </span>
-            ))}
-          </div>
+          <TooltipProvider>
+            <div ref={tagsRef} className="mb-8 flex flex-wrap gap-2">
+              {project.frameworks.map((fw) => {
+                const framework = frameworkIcons[fw.name];
+                if (!framework) return null;
 
+                const Icon = framework.icon;
+
+                return (
+                  <Tooltip key={fw.id}>
+                    <TooltipTrigger asChild>
+                      <span className="pi-tag flex cursor-pointer items-center gap-2 transition-all duration-200 hover:scale-105">
+                        <Icon size={18} color={framework.color || ""} />
+                      </span>
+                    </TooltipTrigger>
+                    <TooltipContent side="top">
+                      <p>{fw.name}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                );
+              })}
+            </div>
+          </TooltipProvider>
+          {/* <div ref={tagsRef} className="mb-8 flex flex-wrap gap-2">
+            {project.frameworks.map((fw) => {
+              const framework = frameworkIcons[fw.name];
+              if (!framework) return null;
+              const Icon = framework.icon;
+              return (
+                <span
+                  key={fw.id}
+                  className="pi-tag hover:scale-101! transition-all duration-200 ease-linear flex items-center gap-2"
+                >
+                  <Icon size={18} color={framework.color} />
+                </span>
+              );
+            })}
+          </div> */}
           <p
             ref={heroDescRef}
             className="text-gray-600 text-base md:text-lg leading-relaxed max-w-2xl font-light"
