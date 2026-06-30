@@ -144,6 +144,164 @@ export const servicesData = [
 export const projects = [
   {
     id: 1,
+    name: "Crave Burgers",
+
+    description:
+      "A modern restaurant website crafted around immersive storytelling and user experience rather than traditional content-heavy layouts. Inspired by award-winning web experiences, the project uses cinematic scroll-driven animations, reusable GSAP components, SVG animations, clip-path transitions, and interactive visual sequences to guide users through the restaurant's story. Instead of simply presenting products, every section is designed to communicate the brand through motion, making the journey from discovering burgers to placing an order feel engaging and memorable.",
+
+    miniDescription:
+      "An award-inspired restaurant experience featuring cinematic GSAP animations, scroll-driven storytelling, reusable animation architecture, and a modern ordering interface built with Next.js and TypeScript.",
+
+    // href: "https://your-demo-link.com",
+    case: "Personal Project",
+
+    image: "/assets/projects/burger.png",
+    video:
+      "https://res.cloudinary.com/dohtpxlnd/video/upload/v1782792687/Screen_Recording_2026-06-29_at_11.20.29_lzkzva.mp4",
+    bgImage: "/assets/projects/burger.png",
+
+    overview_One:
+      "Crave Burgers transforms a traditional restaurant website into an interactive storytelling experience. Rather than relying on long paragraphs, animations introduce the restaurant's journey—from ingredient sourcing and burger preparation to the final customer experience. Every section was designed to create emotional engagement while naturally guiding users toward ordering.",
+
+    overview_Two:
+      "The project emphasizes reusable animation architecture and maintainable frontend engineering. Built with Next.js, TypeScript, GSAP, TanStack Query, and Zod, it combines smooth motion design, scalable component structures, efficient server-state management, and type-safe validation to deliver both an engaging user experience and a production-ready frontend.",
+
+    summary_Frameworks: [
+      { id: 1, name: "Next.js" },
+      { id: 2, name: "TypeScript" },
+      { id: 3, name: "Tailwind CSS" },
+      { id: 4, name: "GSAP" },
+    ],
+
+    frameworks: [
+      { id: 1, name: "Next.js" },
+      { id: 2, name: "React" },
+      { id: 3, name: "TypeScript" },
+      { id: 4, name: "Tailwind CSS" },
+      { id: 5, name: "GSAP" },
+      { id: 6, name: "ScrollTrigger" },
+      { id: 7, name: "SplitText" },
+      { id: 8, name: "TanStack Query" },
+      { id: 9, name: "Zod" },
+      { id: 10, name: "Axios" },
+      { id: 11, name: "next/image" },
+    ],
+
+    highlights: [
+      {
+        icon: "tabler:movie",
+        label: "Visual Storytelling",
+        desc: "Every section is designed to tell the restaurant's story through animation instead of lengthy text, creating a memorable and engaging customer experience.",
+      },
+      {
+        icon: "tabler:brand-greensock",
+        label: "Reusable GSAP Architecture",
+        desc: "Built reusable animation components powered by GSAP, ScrollTrigger, and SplitText to keep complex animations modular, scalable, and easy to maintain.",
+      },
+      {
+        icon: "tabler:transition-right",
+        label: "Cinematic Page Transitions",
+        desc: "Implemented smooth clip-path reveals, SVG animations, page transitions, and section-based motion that create seamless navigation throughout the website.",
+      },
+      {
+        icon: "tabler:device-desktop-code",
+        label: "Modern Frontend Architecture",
+        desc: "Developed with Next.js App Router and TypeScript using reusable components, clean project structure, and responsive layouts for scalability.",
+      },
+      {
+        icon: "tabler:database-share",
+        label: "Efficient Server-State Management",
+        desc: "Integrated TanStack Query for intelligent caching, background refetching, optimistic updates, and seamless synchronization with backend APIs.",
+      },
+      {
+        icon: "tabler:shield-check",
+        label: "Type-safe Forms & API Layer",
+        desc: "Implemented Zod validation for robust form validation, Axios interceptors for centralized API communication, and TypeScript for end-to-end type safety and improved developer experience.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Crave Dashboard",
+
+    description:
+      "A complete restaurant management dashboard and backend system built to power the Crave Burgers platform. The project provides administrators with real-time business insights, secure authentication, full menu management, order tracking, payment processing through Stripe Checkout, and analytics dashboards. Beyond CRUD functionality, the backend implements secure Stripe Webhooks to verify completed payments server-side, ensuring orders are updated only after receiving authenticated events directly from Stripe.",
+
+    miniDescription:
+      "A full-stack restaurant administration platform featuring secure JWT authentication, Stripe payment integration with webhooks, analytics dashboards, burger management, and RESTful APIs built using React, TypeScript, Node.js, Express, and MongoDB.",
+
+    // href: "https://your-dashboard-demo.com",
+    case: "Personal Project",
+
+    image: "/assets/projects/craveDashboard.png",
+    video:
+      "https://res.cloudinary.com/dohtpxlnd/video/upload/v1782793592/Screen_Recording_2026-06-29_at_11.23.09_cycgwb.mp4",
+    bgImage: "/assets/projects/craveDashboard.png",
+
+    overview_One:
+      "Crave Dashboard was developed to simplify restaurant operations through a modern administration interface. Administrators can manage burgers, monitor customer orders, track payment status, view sales analytics, and oversee daily business performance from a centralized dashboard. The interface focuses on usability, responsive layouts, and real-time data visualization to make restaurant management more efficient.",
+
+    overview_Two:
+      "The backend follows a scalable REST API architecture using Node.js, Express, MongoDB, and JWT authentication. Stripe Checkout handles customer payments while secure Stripe Webhooks verify payment completion independently of the client, allowing the server to update order statuses safely even if users close their browser or lose network connectivity. Combined with TanStack Query and Axios on the frontend, the dashboard delivers fast, synchronized, and reliable data management.",
+
+    summary_Frameworks: [
+      { id: 1, name: "React" },
+      { id: 2, name: "TypeScript" },
+      { id: 3, name: "Node.js" },
+      { id: 4, name: "MongoDB" },
+    ],
+
+    frameworks: [
+      { id: 1, name: "React" },
+      { id: 2, name: "TypeScript" },
+      { id: 3, name: "Node.js" },
+      { id: 4, name: "Express.js" },
+      { id: 5, name: "MongoDB" },
+      { id: 6, name: "Mongoose" },
+      { id: 7, name: "JWT Authentication" },
+      { id: 8, name: "Stripe Checkout" },
+      { id: 9, name: "Stripe Webhooks" },
+      { id: 10, name: "TanStack Query" },
+      { id: 11, name: "Axios" },
+      { id: 12, name: "Zod" },
+      { id: 13, name: "Recharts" },
+    ],
+
+    highlights: [
+      {
+        icon: "tabler:layout-dashboard",
+        label: "Restaurant Analytics Dashboard",
+        desc: "Built a responsive admin dashboard that visualizes key business metrics including total revenue, total orders, average order value, pending orders, completed orders, and active menu items using interactive charts.",
+      },
+      {
+        icon: "tabler:burger",
+        label: "Complete Burger Management",
+        desc: "Implemented full CRUD functionality allowing administrators to create, edit, update, delete, and manage burger availability, pricing, descriptions, categories, and menu visibility through a centralized interface.",
+      },
+      {
+        icon: "tabler:shopping-cart-check",
+        label: "Order Management System",
+        desc: "Developed a complete order management workflow where administrators can monitor customer orders, payment status, order progress, and delivery stages while viewing detailed order histories.",
+      },
+      {
+        icon: "tabler:credit-card",
+        label: "Stripe Checkout & Secure Webhooks",
+        desc: "Integrated Stripe Checkout for secure payment processing and implemented Stripe Webhooks to verify completed payments server-side, ensuring orders are marked as paid only after receiving authenticated events directly from Stripe.",
+      },
+      {
+        icon: "tabler:lock-access",
+        label: "JWT Authentication & Protected APIs",
+        desc: "Secured administrator access using JWT authentication with protected REST API endpoints, enabling role-based access to sensitive dashboard operations and restaurant management features.",
+      },
+      {
+        icon: "tabler:database-share",
+        label: "Efficient Data Synchronization",
+        desc: "Leveraged TanStack Query for intelligent caching, automatic background refetching, optimistic updates, and seamless synchronization between the React dashboard and backend APIs, while Axios provided a centralized API layer with reusable interceptors and consistent error handling.",
+      },
+    ],
+  },
+  {
+    id: 3,
     name: "Pho99",
 
     description:
@@ -218,7 +376,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     name: "Laguna Al-Sha'ab",
 
     description:
@@ -292,7 +450,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     name: "Dentelligent",
 
     description:
@@ -364,7 +522,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     name: "EseAgency Clone",
 
     description:
@@ -438,7 +596,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     name: "Query AI",
     description:
       "An AI-powered conversational platform inspired by modern chatbot systems, built to deliver fast, intelligent, and context-aware interactions. The application combines secure authentication, real-time AI responses, payment-based premium plans, persistent chat history, and shareable conversations into a scalable full-stack experience focused on performance, usability, and modern UI design.",
@@ -494,7 +652,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 8,
     name: "Emotion Driven Symbolic Music Generator",
     description:
       "A controllable and emotion-aware symbolic music generation framework that generates multi-track MIDI compositions from text captions and lyrics. The system uses Transformer-based autoregressive models with adversarial training to reduce exposure bias, enabling structurally coherent and emotionally aligned musical outputs.",
@@ -556,7 +714,7 @@ export const projects = [
     ],
   },
   {
-    id: 7,
+    id: 9,
     name: "Spylt Milk Clone",
 
     description:
@@ -611,65 +769,65 @@ export const projects = [
       },
     ],
   },
+  // {
+  //   id: 9,
+  //   name: "CodeBook",
+
+  //   description:
+  //     "A full-stack eBook commerce platform where users can explore, purchase, and manage digital books with a smooth and intuitive shopping experience. The system includes secure JWT-based authentication, cart functionality, and state-managed user interactions built with a modern frontend architecture.",
+
+  //   miniDescription:
+  //     "A full-stack eBook marketplace with JWT authentication, cart system, Redux state management, and seamless book purchasing experience.",
+
+  //   href: "",
+  //   case: "Learning Project",
+
+  //   image: "/assets/projects/codeBookImg.png",
+  //   bgImage: "/assets/backgrounds/Codebook.png",
+  //   video:
+  //     "https://res.cloudinary.com/dohtpxlnd/video/upload/v1777552088/Screen_Recording_2026-04-30_at_18.07.48_ze2jeb.mov",
+
+  //   summary_Frameworks: [
+  //     { id: 1, name: "React.js" },
+  //     { id: 2, name: "Redux Toolkit" },
+  //     { id: 3, name: "JWT Auth" },
+  //     { id: 4, name: "JSON Server" },
+  //   ],
+
+  //   frameworks: [
+  //     { id: 1, name: "React.js" },
+  //     { id: 2, name: "JWT Authentication" },
+  //     { id: 3, name: "Redux Toolkit" },
+  //     { id: 4, name: "JSON Server" },
+  //     { id: 5, name: "DaisyUI" },
+  //   ],
+
+  //   overview_One:
+  //     "CodeBook is a simple yet functional eBook e-commerce platform built to understand full-stack application flow, including authentication, product listing, and cart management using Redux state handling.",
+
+  //   overview_Two:
+  //     "The project focuses on implementing JWT-based login and secure user sessions, allowing users to browse books, add items to cart, and simulate a complete digital purchase workflow with a clean UI experience.",
+
+  //   highlights: [
+  //     {
+  //       icon: "tabler:lock",
+  //       label: "JWT Authentication",
+  //       desc: "Secure login system with token-based authentication to manage user sessions safely and efficiently.",
+  //     },
+  //     {
+  //       icon: "tabler:shopping-cart",
+  //       label: "Cart & Purchase Flow",
+  //       desc: "Users can add books to cart, manage quantities, and simulate a complete checkout experience.",
+  //     },
+  //     {
+  //       icon: "tabler:brand-redux",
+  //       label: "Redux State Management",
+  //       desc: "Centralized state handling for authentication, cart operations, and UI consistency across the app.",
+  //     },
+  //   ],
+  // },
   {
-    id: 8,
-    name: "CodeBook",
-
-    description:
-      "A full-stack eBook commerce platform where users can explore, purchase, and manage digital books with a smooth and intuitive shopping experience. The system includes secure JWT-based authentication, cart functionality, and state-managed user interactions built with a modern frontend architecture.",
-
-    miniDescription:
-      "A full-stack eBook marketplace with JWT authentication, cart system, Redux state management, and seamless book purchasing experience.",
-
-    href: "",
-    case: "Learning Project",
-
-    image: "/assets/projects/codeBookImg.png",
-    bgImage: "/assets/backgrounds/Codebook.png",
-    video:
-      "https://res.cloudinary.com/dohtpxlnd/video/upload/v1777552088/Screen_Recording_2026-04-30_at_18.07.48_ze2jeb.mov",
-
-    summary_Frameworks: [
-      { id: 1, name: "React.js" },
-      { id: 2, name: "Redux Toolkit" },
-      { id: 3, name: "JWT Auth" },
-      { id: 4, name: "JSON Server" },
-    ],
-
-    frameworks: [
-      { id: 1, name: "React.js" },
-      { id: 2, name: "JWT Authentication" },
-      { id: 3, name: "Redux Toolkit" },
-      { id: 4, name: "JSON Server" },
-      { id: 5, name: "DaisyUI" },
-    ],
-
-    overview_One:
-      "CodeBook is a simple yet functional eBook e-commerce platform built to understand full-stack application flow, including authentication, product listing, and cart management using Redux state handling.",
-
-    overview_Two:
-      "The project focuses on implementing JWT-based login and secure user sessions, allowing users to browse books, add items to cart, and simulate a complete digital purchase workflow with a clean UI experience.",
-
-    highlights: [
-      {
-        icon: "tabler:lock",
-        label: "JWT Authentication",
-        desc: "Secure login system with token-based authentication to manage user sessions safely and efficiently.",
-      },
-      {
-        icon: "tabler:shopping-cart",
-        label: "Cart & Purchase Flow",
-        desc: "Users can add books to cart, manage quantities, and simulate a complete checkout experience.",
-      },
-      {
-        icon: "tabler:brand-redux",
-        label: "Redux State Management",
-        desc: "Centralized state handling for authentication, cart operations, and UI consistency across the app.",
-      },
-    ],
-  },
-  {
-    id: 9,
+    id: 10,
     name: "Chatter",
 
     description:
